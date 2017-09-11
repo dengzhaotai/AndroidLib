@@ -4,6 +4,8 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 
+import com.dzt.openlibrary.ToastUtils;
+
 public class MainActivity extends AppCompatActivity {
 
     @Override
@@ -13,7 +15,7 @@ public class MainActivity extends AppCompatActivity {
         findViewById(R.id.btn).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
+                ToastUtils.showToast(MainActivity.this, "you click btn");
             }
         });
     }
